@@ -7,7 +7,7 @@ body {
 /* shared style  */
 
 .text-light-gray {
-	color: #fff;
+	color: #807d7d;
 	font-size: 1rem;
 	font-weight: 400px;
 }
@@ -19,6 +19,7 @@ body {
 	background: #ff5400;
 	padding: 18px 0;
 	border-style: none;
+	color: #fff;
 }
 /* banner section styles  */
 
@@ -56,9 +57,22 @@ body {
 	border-style: none;
 }
 
+/* our tour section  */
+
+.our-tour {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	margin: 70px 0;
+	align-items: center;
+}
+
 /* media queary section  */
 
 @media screen and (max-width: 600px) {
+	.our-tour {
+		flex-direction: column;
+	}
 	.input-list {
 		flex-direction: column;
 		width: 100%;
