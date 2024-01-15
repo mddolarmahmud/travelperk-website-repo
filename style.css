@@ -1,3 +1,73 @@
 body {
 	font-family: 'Mulish', sans-serif;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* shared style  */
+
+.text-light-gray {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400px;
+}
+
+.btn-primary {
+	width: 174px;
+	height: 52px;
+	border-radius: 8px;
+	background: #ff5400;
+	padding: 18px 0;
+	border-style: none;
+}
+/* banner section styles  */
+
+.banner {
+	width: 1420px;
+	height: 500px;
+	width: 100%;
+	background-image: url(Images/group13.png);
+	background-size: cover;
+	text-align: center;
+	padding-top: 50px;
+}
+.banner .banner-heading {
+	font-size: 4rem;
+	font-weight: 800px;
+	color: #fff;
+}
+.input-list {
+	background: rgba(255, 255, 255, 0.3);
+	/* background-color: aqua; */
+	border-radius: 8px;
+	padding: 20px;
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
+.input-list input {
+	width: 174px;
+	height: 52px;
+	border-radius: 8px;
+	border-style: none;
+}
+
+/* media queary section  */
+
+@media screen and (max-width: 600px) {
+	.input-list {
+		flex-direction: column;
+		width: 100%;
+		margin: 10px 20px;
+	}
+	.input-list input {
+		margin-top: 20px;
+	}
+	.banner {
+		height: 100%;
+	}
 }
