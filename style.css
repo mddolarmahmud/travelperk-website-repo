@@ -7,7 +7,7 @@ main {
 	margin: 0 auto;
 }
 
-/* shared style  */
+/* shared style section */
 
 .text-light-gray {
 	color: #807d7d;
@@ -173,18 +173,41 @@ nav ul a {
 	background: rgba(233, 68, 68, 0.05);
 }
 
-.footer {
-	width: 100%;
-	margin: 0 auto;
-	height: 320px;
-	text-align: center;
-	background: rgba(19, 19, 24, 0.05);
-	padding: 50px 0;
-}
-.contact-icon {
+/* simple perfact place section style  */
+
+.simple-perfact {
 	display: flex;
-	justify-content: center;
-	gap: 24px;
+	justify-content: space-between;
+	gap: 50px;
+	margin: 70px 0;
+	align-items: center;
+}
+
+.group-40 img {
+	width: 500px;
+	width: 100%;
+}
+/* newsletter section style  */
+.news-letter {
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+	margin: 70px 0;
+	align-items: center;
+}
+.news-letter-inpu-filed input {
+	width: 393px;
+	height: 52px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background: rgba(19, 19, 24, 0.05);
+	border-style: none;
+}
+.news-letter-inpu-filed {
+	width: 100%;
+}
+.group-41 img {
+	width: 100%;
 }
 
 /* deal and discount section style  */
@@ -205,10 +228,10 @@ nav ul a {
 	align-items: center;
 	padding-right: 50px;
 	margin: 50px 0;
+	box-sizing: border-box;
 }
 
 .discount-offer-middle {
-	/* width: 1420px; */
 	height: 600px;
 	width: 100%;
 	background-image: url(Images/Group\ 39.png);
@@ -219,6 +242,7 @@ nav ul a {
 	align-items: center;
 	padding-left: 50px;
 	margin: 50px 0;
+	box-sizing: border-box;
 }
 
 .deal-image-one {
@@ -229,6 +253,21 @@ nav ul a {
 	background: rgba(255, 255, 255, 0.8);
 	padding: 20px;
 }
+
+/* footer section style  */
+.footer {
+	width: 100%;
+	margin: 0 auto;
+	height: 320px;
+	text-align: center;
+	background: rgba(19, 19, 24, 0.05);
+	padding: 50px 0;
+}
+.contact-icon {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+}
 /* media queary section for mobile device */
 
 @media screen and (max-width: 600px) {
@@ -236,12 +275,13 @@ nav ul a {
 	.our-tour,
 	.row,
 	.choose-us-card,
+	.simple-perfact,
+	.news-letter,
 	nav {
 		flex-direction: column;
 	}
 
 	.input-list {
-		/* flex-direction: column; */
 		width: 100%;
 		margin: 10px 20px;
 		right: 60px;
@@ -253,6 +293,12 @@ nav ul a {
 		height: 100%;
 	}
 	.tour-image img {
+		width: 100%;
+	}
+	.group-40 img {
+		width: 100%;
+	}
+	.group-41 img {
 		width: 100%;
 	}
 	main,
@@ -272,12 +318,17 @@ nav ul a {
 		padding-left: 0;
 		padding-bottom: 30px;
 	}
+
+	.news-letter-inpu-filed {
+		margin-right: 10px;
+	}
 	.choose-card-one,
 	.choose-card-two,
 	.choose-card-three,
 	.choose-us-description,
 	.deal-image-one,
-	.discount-offer {
+	.discount-offer,
+	.news-letter-inpu-filed {
 		width: 100%;
 	}
 }
