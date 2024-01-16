@@ -14,6 +14,9 @@ main {
 	font-size: 1rem;
 	font-weight: 400px;
 }
+.color-orang {
+	color: #ff5400;
+}
 
 .btn-primary {
 	width: 174px;
@@ -183,6 +186,49 @@ nav ul a {
 	justify-content: center;
 	gap: 24px;
 }
+
+/* deal and discount section style  */
+
+.deal-discount {
+	text-align: center;
+	margin: 70px 0;
+}
+.discount-offer {
+	/* width: 1420px; */
+	height: 600px;
+	width: 100%;
+	background-image: url(Images/Group\ 39.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding-right: 50px;
+	margin: 50px 0;
+}
+
+.discount-offer-middle {
+	/* width: 1420px; */
+	height: 600px;
+	width: 100%;
+	background-image: url(Images/Group\ 39.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 50px;
+	margin: 50px 0;
+}
+
+.deal-image-one {
+	width: 500px;
+	height: 300px;
+	border-radius: 16px;
+	border: 2px solid #fff;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+}
 /* media queary section for mobile device */
 
 @media screen and (max-width: 600px) {
@@ -214,10 +260,24 @@ nav ul a {
 		padding: 0 10px;
 	}
 
+	.discount-offer {
+		justify-content: center;
+		align-items: end;
+		padding-right: 0;
+		padding-bottom: 30px;
+	}
+	.discount-offer-middle {
+		justify-content: center;
+		align-items: end;
+		padding-left: 0;
+		padding-bottom: 30px;
+	}
 	.choose-card-one,
 	.choose-card-two,
 	.choose-card-three,
-	.choose-us-description {
+	.choose-us-description,
+	.deal-image-one,
+	.discount-offer {
 		width: 100%;
 	}
 }
