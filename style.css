@@ -84,6 +84,7 @@ nav ul a {
 	height: auto;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	margin: 0 auto;
 }
 
@@ -93,7 +94,9 @@ nav ul a {
 	border-radius: 8px;
 	border-style: none;
 }
-
+.input-list i {
+	margin-left: -50px;
+}
 /* our tour section  */
 
 .our-tour {
