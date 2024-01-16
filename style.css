@@ -1,5 +1,8 @@
 body {
 	font-family: 'Mulish', sans-serif;
+}
+header,
+main {
 	max-width: 1440px;
 	margin: 0 auto;
 }
@@ -21,6 +24,39 @@ body {
 	border-style: none;
 	color: #fff;
 }
+
+/* navbar section style  */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-header {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.nav-header img {
+	width: 48px;
+	height: 56.008px;
+}
+.nav-header .bold {
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+.perk {
+	color: #ff5400;
+}
+
+nav ul {
+	display: flex;
+	gap: 24px;
+	list-style: none;
+}
+
+nav ul a {
+	text-decoration: none;
+}
 /* banner section styles  */
 
 .banner {
@@ -41,7 +77,6 @@ body {
 	background: rgba(255, 255, 255, 0.3);
 	/* background-color: aqua; */
 	position: relative;
-	/* position: absolute; */
 	border-radius: 8px;
 	padding: 20px;
 	max-width: 800px;
@@ -89,7 +124,8 @@ body {
 @media screen and (max-width: 600px) {
 	.input-list,
 	.our-tour,
-	.row {
+	.row,
+	nav {
 		flex-direction: column;
 	}
 
@@ -108,7 +144,8 @@ body {
 	.tour-image img {
 		width: 100%;
 	}
-	body {
+	main,
+	header {
 		padding: 0 10px;
 	}
 }
